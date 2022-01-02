@@ -1,0 +1,19 @@
+{
+  "eslint.validate": ["vue", "html", "javascript", "typescript"],
+  "css.validate": false,
+  "scss.validate": false,
+  "less.validate": false,
+  "stylelint.enable": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.enable": true,
+  "editor.formatOnSave": true,
+  "prettier.configPath": ".prettierrc",
+  "vetur.experimental.templateInterpolationService": true,
+  "vetur.validation.style": false,
+  // "files.exclude": {
+  //   "node_modules/": true
+  // },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}

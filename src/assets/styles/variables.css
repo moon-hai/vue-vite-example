@@ -1,0 +1,87 @@
+@custom-media --viewport-mobile (max-width: 480px);
+@custom-media --viewport-desktop (min-width: 481px);
+@custom-media --viewport-page-container (max-width: 1156px);
+
+:root {
+  /* Colors
+   * ======================================================================== */
+
+  /**
+   * Primary
+   */
+
+  --color-primary: #00906f; /* Override common-ui custom property */
+  --color-primary-rgb: 63, 81, 181;
+
+  /**
+   * Other
+   */
+
+  --color-highlight: #f57c00;
+  --color-orange: #ee4a0e;
+  --color-indigo: #f5f6fa;
+  --color-c5-rgb: 0, 160, 232;
+  --color-p0: #f2f9f8;
+  --color-p1: #d1ebe5;
+
+  /* Layouts
+   * ======================================================================== */
+
+  --space: var(--container-horizontal-padding); /* 16px */
+  --space-2x: calc(var(--space) * 2); /* 32px */
+  --space-1o2: calc(var(--space) / 2); /* 8px */
+  --space-1x5: calc(var(--space) * 1.5); /* 24px */
+
+  /**
+   * Modal widths
+   */
+
+  --modal-width-sm: 456px;
+  --modal-width-md: 800px;
+  --modal-width-lg: 888px;
+
+  /**
+   * Default Layout from raksul-common-ui
+   */
+
+   /* --container-width: 1124px; */
+   --container-outer-width: calc(
+    var(--container-width) +
+    var(--space) * 2
+  ); /* 1156px */
+
+  /**
+   * Z-index
+   */
+
+  --z-index-sticky-footer: 10;
+  --z-index-drag-indicator: 20;
+  --z-index-global-header-menu: 30; /* Override common-ui custom property */
+  --z-index-sticky-header-mobile: 40;
+  --z-index-modal: 50;
+  --z-index-loading-overlay: 60;
+  --z-index-snackbar: 70;
+
+  /* TODO: その他の野良 z-index を整理 */
+
+  /* ProgressSteps
+   * ======================================================================== */
+
+   --progress-steps-min-width: 330px;
+
+  /* Sales List Selector
+   * ======================================================================== */
+
+  --sales-list-selector-list-label-width: 250px;
+  --sales-list-selector-calendar-cell-width: 34px;
+  --sales-list-selector-calendar-cell-height: 56px;
+
+  /**
+   * Z-index
+   */
+
+  --sales-list-selector-dates-container-z-index: 0;
+  --sales-list-selector-label-container-z-index: 1;
+  --sales-list-selector-selected-overlay-z-index: 2;
+  --sales-list-selector-scroll-button-z-index: 3;
+}

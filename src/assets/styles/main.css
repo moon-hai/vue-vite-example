@@ -1,0 +1,23 @@
+@import './variables.css';
+
+body {
+  overscroll-behavior: none;
+}
+
+a,
+a:active,
+a:hover,
+.TextLink__root,
+.TextLink__root:active,
+.TextLink__root:hover {
+  border: none;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:active,
+a:hover,
+.TextLink__root:active,
+.TextLink__root:hover {
+  opacity: 0.7;
+}
